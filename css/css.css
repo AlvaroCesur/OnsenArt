@@ -205,12 +205,10 @@ nav {
 footer {
   display: flex;
   justify-content: center;
+  gap: 30vw;
+  flex-direction: row;
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-}
-
-.columna-footer {
-  margin: 2vh 5vw 2vh 5vh;
 }
 
 footer h3 {
@@ -222,6 +220,29 @@ footer li {
   list-style: none;
   color: white;
   font-family: 'Nunito', sans-serif;
+}
+
+.columna-footer-1 {
+  flex: 50%;
+}
+
+.columna-footer-2 {
+  flex: 50%;
+}
+
+.copyright-footer {
+  flex: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1250px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+  }
 }
 
 /*CONTACTO*/
