@@ -29,21 +29,22 @@
 
     <form action="" id="formu">
       <h1>Contacto</h1>
-      <input type="text" name="Nombre" placeholder="Nombre" required>
-      <input type="text" name="correo" placeholder="Correo" required>
-      <input type="text" name="telefono" placeholder="Teléfono" required>
+      <input type="text" id="name" name="Nombre" placeholder="Nombre" required>
+      <input type="text" id="email" name="correo" placeholder="Correo" required>
+      <input type="text" id="tef" name="telefono" placeholder="Teléfono" required>
 
       <textarea
-        name="mensaje"
-        placeholder="Escriba aquí su mensaje"
-        required></textarea>
+        name="mensaje" id="mensaje"
+        placeholder="Escriba aquí su mensaje" required></textarea>
 
       <button type="submit" title="Enviar" name="Ingresar">Enviar</button>
 
-      <div class="pie-form">
+      <p id="warnings" class="warnings"></p>
+
+      <!--<div class="pie-form">
         <a href="#">¿Perdiste tu contraseña?</a>
         <a href="#">¿No tienes Cuenta? Registrate</a>
-    </div>
+    </div>-->
 
     </form>
 
@@ -53,5 +54,6 @@
     
     </div>
 
+    <script src="js/js.js"></script>
   </body>
 </html>
