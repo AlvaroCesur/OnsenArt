@@ -21,7 +21,7 @@ nav {
   z-index: 10;
 }
 
-/* Styling logo */
+/*Styling logo*/
 
 .logo {
   padding:1vh 1vw;
@@ -32,7 +32,7 @@ nav {
   height: 5rem;
 }
 
-/* Styling Links */
+/*Styling Links*/
 
 .nav-links {
   display: flex;
@@ -96,7 +96,7 @@ nav {
   transition: 0s;
 }
 
-/* Styling Hamburger Icon */
+/*Styling Hamburger Icon*/
 
 .hamburger div {
   width: 30px;
@@ -110,7 +110,7 @@ nav {
   display: none;
 }
 
-/* Stying for small screens */
+/*Stying for small screens*/
 @media screen and (max-width: 1250px) {
   nav {
       position: relative;
@@ -186,7 +186,7 @@ nav {
 
 }
 
-/* Animating Hamburger Icon on Click */
+/*Animating Hamburger Icon on Click*/
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -248,39 +248,76 @@ footer li {
   }
 }
 
+/* INDEX */
+  .anuncios{
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    background-color: #99b2bb;
+  }
+
+  #linea{
+    position: relative;
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  #linea:before{
+    content:" ";
+    height: 2px;
+    width: 900px;
+    background: red;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  
+  #linea:after{
+    content:" ";
+    height: 2px;
+    width: 900px;
+    background: red;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
 /* CONTACTO */
-body {
-  font-family: 'Nunito', sans-serif;  
-  font-weight: normal;
-  font-size: 100%;
-  color: #1b262c;
-  margin: 0;
+  body {
+    font-family: 'Nunito', sans-serif;  
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    margin: 0;
     
-}
+  }
   
-#contenedor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  margin: 0;
-  padding: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  width: 100%;
-  height: 100%;
-  
-  background-color:#fffad9;
-}
+  #contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+    background-color:#fffad9;
+  }
 
 
-#contenedorcentrado {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-  padding: 30px;
-  box-sizing: border-box;
+  #contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 #formu {
@@ -321,7 +358,7 @@ textarea {
   max-width: 100%;
 }
 
-/* Boton formulario */
+/*botón*/
 button {
   font-family: 'Nunito', sans-serif;
   font-size: 110%;
@@ -340,13 +377,13 @@ button {
 }
 
 button:hover {
-  background-color:#3c4245 ;
-  color:#63e481;
-  cursor: pointer;
+    background-color:#3c4245 ;
+    color:#63e481;
+    cursor: pointer;
     
 }
   
-/* Estilo de los inputs y textarea */
+/*estilo de los inputs y textarea*/
 
 input, textarea {
   font-family: 'Nunito', sans-serif;
@@ -420,7 +457,7 @@ textarea:hover {
     color: #b1afff;
 }
   
-/* Mapa Formulario */
+/*mapa*/
 #derecho {
   margin-left: 30px;
 
@@ -434,53 +471,35 @@ textarea:hover {
 
 }
 
-/* LOGIN */
+/*LOGIN*/
 
-#formu2 {
-  width: 100%;
-  max-width: 320px;
-  min-width: 320px;
-  height: 410px;
-  padding: 30px 30px 50px 30px;
-  background-color: #ffffff;
-  
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-  -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-  
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  
-  box-sizing: border-box;
-  
-  opacity: 1;
-  filter: alpha(opacity=1);
+#formu2{
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    height: 410px;
+    padding: 30px 30px 50px 30px;
+    background-color: #ffffff;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    
+    opacity: 1;
+    filter: alpha(opacity=1);
 
-}
-
-
-#contenedor2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  margin: 0;
-  padding: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  width: 100%;
-  height: 100%;
-  
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../img/fondoWeb.gif);
 }
 
 
 .social{
-  margin-top:20px;
-  text-align:center;
-  cursor:pointer;
-  margin:12px auto;
+    margin-top:20px;
+    text-align:center;
+    cursor:pointer;
+    margin:12px auto;
 }
