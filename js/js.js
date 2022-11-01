@@ -15,6 +15,27 @@ hamburger.addEventListener('click', ()=>{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //validacion contacto
 
 const nombre = document.getElementById("name");
@@ -32,6 +53,7 @@ form.addEventListener("submit" , e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let regexTef = /^\d{9}$/;
     let regexMensaje= /^[a-zA-ZÀ-ÿ\s]{1,120}$/;
+    parraf.innerHTML = "";
 
     if(!regexNombre.test(nombre.value)){
         warnings += `El nombre no es válido <br>`;
