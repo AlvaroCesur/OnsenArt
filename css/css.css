@@ -203,10 +203,6 @@ nav {
 /* FOOTER */
 
 footer {
-  display: flex;
-  justify-content: center;
-  gap: 30vw;
-  flex-direction: row;
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
 }
@@ -222,6 +218,13 @@ footer li {
   font-family: 'Nunito', sans-serif;
 }
 
+.contenedor-columnas {
+  display: flex;
+  justify-content: center;
+  gap: 30vw;
+  flex-direction: row;
+}
+
 .columna-footer-1 {
   flex: 50%;
 }
@@ -231,7 +234,7 @@ footer li {
 }
 
 .copyright-footer {
-  flex: 100%;
+  display: flex;
   justify-content: center;
 }
 
