@@ -12,6 +12,7 @@ h1 {
 
 body {
   overflow-x: hidden;
+  background-color: #fffad9;
 }
 
 /* Boton */
@@ -33,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color:#3c4245 ;
+    background-color:#317942 ;
     color:#63e481;
     cursor: pointer;
     
@@ -44,7 +45,7 @@ button:hover {
 nav {
   height: 6rem;
   width: 100vw;
-  background-color: #131418;
+  background-color: rgb(36, 38, 47);
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   position: relative;
@@ -267,7 +268,7 @@ footer a {
 }
 
 footer a:hover {
-  color: green;
+  color: #b1afff;
 }
 
 @media screen and (max-width: 1250px) {
@@ -292,7 +293,7 @@ footer a:hover {
   .anuncios{
     margin-top: 3vw;
     margin-bottom: 3vw;
-    background-color: #99b2bb;
+    background-color: #fff6ba;
     text-align: center;
     padding: 5vh;
   }
@@ -308,7 +309,7 @@ footer a:hover {
     content:" ";
     height: 2px;
     width: 50vw;
-    background: red;
+    background: #b1afff ;
     display: block;
     position: absolute;
     top: 50%;
@@ -319,7 +320,7 @@ footer a:hover {
     content:" ";
     height: 2px;
     width: 50vw;
-    background: red;
+    background: #b1afff ;
     display: block;
     position: absolute;
     top: 50%;
