@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap');
 
-/* NAVBAR */
+/* ESTILOS COMUNES */
 
 * {
-  /* margin: 0;
-  padding: 0;  */
   font-family: 'Nunito', sans-serif;
 }
 
@@ -15,6 +13,33 @@ h1 {
 body {
   overflow-x: hidden;
 }
+
+/* Boton */
+button {
+  font-family: 'Nunito', sans-serif;
+  font-size: 110%;
+  color:#3c4245;
+  width: 100%;
+  height: 40px;
+  border: none;
+  
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  
+  background-color:#63e481;
+  
+  margin-top: 10px;
+}
+
+button:hover {
+    background-color:#3c4245 ;
+    color:#63e481;
+    cursor: pointer;
+    
+}
+
+/* NAVBAR */
 
 nav {
   height: 6rem;
@@ -210,7 +235,7 @@ nav {
 footer {
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
-  padding: 5vh;
+  padding-top: 3vh;
 }
 
 footer h3 {
@@ -231,17 +256,18 @@ footer li {
   gap: 10vw;
 }
 
-/* .columna-footer-1 {
-  flex: 50%;
-}
-
-.columna-footer-2 {
-  flex: 50%;
-} */
-
 .copyright-footer {
   display: flex;
   justify-content: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: green;
 }
 
 @media screen and (max-width: 1250px) {
@@ -390,31 +416,6 @@ textarea {
   max-height: 200px;
   max-width: 100%;
 }
-
-/* Boton */
-button {
-  font-family: 'Nunito', sans-serif;
-  font-size: 110%;
-  color:#3c4245;
-  width: 100%;
-  height: 40px;
-  border: none;
-  
-  border-radius: 3px 3px 3px 3px;
-  -moz-border-radius: 3px 3px 3px 3px;
-  -webkit-border-radius: 3px 3px 3px 3px;
-  
-  background-color:#63e481;
-  
-  margin-top: 10px;
-}
-
-button:hover {
-    background-color:#3c4245 ;
-    color:#63e481;
-    cursor: pointer;
-    
-}
   
 /* Estilo de los inputs y textarea */
 
@@ -521,7 +522,6 @@ textarea:hover {
   filter: alpha(opacity=1);
 
 }
-
 
 #contenedor2 {
   display: flex;
@@ -750,7 +750,7 @@ textarea:hover {
 @media screen and (max-width: 1250px) {
   .imagenAboutUs {
     display:inline-block;
-    clear: left;
+    clear: both;
     margin: auto;
     text-align: center;
   }
