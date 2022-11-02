@@ -433,33 +433,17 @@ textarea:hover {
   }
 
   #derecho {
-    margin-top: 35px;
-    margin-right: 30px;
+    margin-top: 50px;
+    margin-right: 45px;
 
   }
 
 }
 
-.pie-form {
-    font-size: 90%;
-    text-align: center;    
-    margin-top: 15px;
-}
 
-.pie-form a {
-    display: block;
-    text-decoration: none;
-    color: #3c4245;
-    margin-bottom: 3px;
-}
-
-.pie-form a:hover {
-    color: #b1afff;
-}
-  
 /* Mapa */
 #derecho {
-  margin-left: 30px;
+  margin-left: 60px;
 
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
@@ -479,13 +463,14 @@ textarea:hover {
   padding-top: 20px;
 }
 
+
 /* LOGIN */
 
 #formu2 {
   width: 100%;
   max-width: 320px;
   min-width: 320px;
-  height: 410px;
+  height: 465px;
   padding: 30px 30px 50px 30px;
   background-color: #ffffff;
   
@@ -520,6 +505,23 @@ textarea:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(../img/fondoWeb.gif);
+}
+
+.pie-form {
+  font-size: 90%;
+  text-align: center;    
+  margin-top: 25px;
+}
+
+.pie-form a {
+  display: block;
+  text-decoration: none;
+  color: #3c4245;
+  margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+  color: #b1afff;
 }
 
 
