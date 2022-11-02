@@ -210,6 +210,7 @@ nav {
 footer {
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  padding: 5vh;
 }
 
 footer h3 {
@@ -225,18 +226,18 @@ footer li {
 
 .contenedor-columnas {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 30vw;
-  flex-direction: row;
+  gap: 10vw;
 }
 
-.columna-footer-1 {
+/* .columna-footer-1 {
   flex: 50%;
 }
 
 .columna-footer-2 {
   flex: 50%;
-}
+} */
 
 .copyright-footer {
   display: flex;
@@ -266,6 +267,8 @@ footer li {
     margin-top: 3vw;
     margin-bottom: 3vw;
     background-color: #99b2bb;
+    text-align: center;
+    padding: 5vh;
   }
 
   #linea{
@@ -739,12 +742,23 @@ textarea:hover {
   max-height: 170px;
 }
 
+.btnContacto {
+  width: 50%;
+  text-align: center;
+}
+
 @media screen and (max-width: 1250px) {
   .imagenAboutUs {
     display:inline-block;
     clear: left;
     margin: auto;
+    text-align: center;
   }
+
+  .imagenAboutUs img {
+    text-align: center;
+  }
+
   .seccionAboutUs {
     display:inline-block;
 
