@@ -384,7 +384,7 @@ footer a:hover {
   width: 100%;
   max-width: 355px;
   min-width: 355px;
-  height: 530px;
+  height: 550px;
   padding: 30px 30px 50px 30px;
   background-color: #ffffff;
   
@@ -493,7 +493,7 @@ textarea:hover {
   width: 200px;
   text-align: center;
   margin:auto;
-  color:#ffafaf;
+  color:#fb6363;
   padding-top: 20px;
 }
 
