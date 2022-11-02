@@ -644,16 +644,6 @@ textarea:hover {
     display: inline-block;
     width: 60%;
     text-align: center;
-    background-color: #7DC855;
-    border-radius: 6px;
-    font-size: 16px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 12px 30px;
-    transition: all .5s;
-  }
-  .btnCarrito:hover {
-    background-color: #64af3d;
   }
 
   /* Info Arte */
