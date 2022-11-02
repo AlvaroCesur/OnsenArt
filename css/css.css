@@ -52,7 +52,7 @@ nav {
   z-index: 10;
 }
 
-/* Styling logo */
+/* Estilo del logo */
 
 .logo {
   padding:1vh 1vw;
@@ -63,7 +63,7 @@ nav {
   height: 5rem;
 }
 
-/* Styling Links */
+/* Estilo de los links */
 
 .nav-links {
   display: flex;
@@ -127,7 +127,7 @@ nav {
   transition: 0s;
 }
 
-/* Styling Hamburger Icon */
+/* Estilo del menu hamburguesa */
 
 .hamburger div {
   width: 30px;
@@ -141,7 +141,7 @@ nav {
   display: none;
 }
 
-/* Stying for small screens */
+/* Responsive del nav */
 @media screen and (max-width: 1250px) {
   nav {
       position: relative;
@@ -217,7 +217,7 @@ nav {
 
 }
 
-/* Animating Hamburger Icon on Click */
+/* Animaciones del menu hamburguesa */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -475,7 +475,6 @@ textarea:hover {
 
 }
 
-
 /* Mapa */
 #derecho {
   margin-left: 60px;
@@ -497,7 +496,6 @@ textarea:hover {
   color:#ffafaf;
   padding-top: 20px;
 }
-
 
 /* LOGIN */
 
@@ -605,13 +603,6 @@ textarea:hover {
 /* Contenido de la derecha */
 
   /* Descripcion del producto */
-  .descripcionProducto span {
-    font-size: 12px;
-    color: #358ED7;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
 
   .descripcionProducto h1 {
     font-weight: 300;
