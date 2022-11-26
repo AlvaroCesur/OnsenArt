@@ -373,9 +373,10 @@ footer a:hover {
   #contenedorcentrado {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
     flex-direction:row;
 
+    margin-left: 250px;
     padding: 10px;
     box-sizing: border-box;
 }
