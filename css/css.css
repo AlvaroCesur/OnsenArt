@@ -34,10 +34,10 @@ button {
 }
 
 button:hover {
-    background-color:#317942 ;
-    color:#63e481;
-    cursor: pointer;
-    
+  color: #f2f5f7;
+  background-color: #1b262c;
+  border: 1px solid #1b262c;
+  cursor: pointer;
 }
 
 /* NAVBAR */
@@ -48,15 +48,16 @@ nav {
   background-color: #131418;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
+  justify-content: center;
   position: relative;
   z-index: 10;
 }
 
+
 /* Estilo del logo */
 
 .logo {
-  padding:1vh 1vw;
-  float: left;
+  padding: 1vh 1vw;
 }
 
 .logo img {
@@ -162,7 +163,7 @@ nav {
   .nav-links {
       position: absolute;
       background: #131418;
-      height: 50vh;
+      height: 100vh;
       width: 100%;
       flex-direction: column;
       clip-path: circle(50px at 90% -20%);
@@ -279,6 +280,9 @@ footer a:hover {
     flex-direction: column;
     gap: 1vw;
   }
+  footer h3 {
+    text-align: center;
+  }
 }
 
 /* INDEX */
@@ -293,9 +297,18 @@ footer a:hover {
   .anuncios{
     margin-top: 3vw;
     margin-bottom: 3vw;
+    height: auto;
     background-color: #fff6ba;
     text-align: center;
     padding: 5vh;
+  }
+
+  .anuncios img {
+    width: 100%;
+    height: auto;
+    max-width: 1119px;
+    max-height: 512px;
+
   }
 
   #linea{
@@ -741,4 +754,51 @@ textarea:hover {
     display:inline-block;
 
   }
+}
+
+/* PAGINA CATEGORIA  */
+
+#wrapperCat h1 {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+#wrapperCat .toggles {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+}
+
+#wrapperCat button {
+  background-color: #63e481;
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  overflow: visible;
+  margin: 5px auto !important;
+}
+
+#wrapperCat button:hover {
+  color: #f2f5f7;
+  background-color: #1b262c;
+  border: 1px solid #1b262c;
+}
+
+#wrapperCat .covers {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#wrapperCat .covers div {
+  margin: 2%;
+}
+#wrapperCat .covers img {
+  border: 1px solid #f2f5f7;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
 }
