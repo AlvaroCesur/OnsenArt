@@ -3,57 +3,53 @@
 
 <!-- Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento. -->
 <html lang="es">
-    
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - Onsen Art</title>
-        <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/css.css">
-        
-    </head>
-    
-    <body>
-        
-        <div id="contenedor2">
-            
-                <div id="formu2">
 
-                    <form id="loginform">
-                        <h1>Login</h1>
-                        <!--<label for="usuario">Usuario</label>-->
-                        <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
-                        
-                       <!-- <label for="password">Contraseña</label>-->
-                        <input id="password" type="password" placeholder="Contraseña" name="password" required>
-                        
-                        <button type="submit" title="Ingresar" name="Ingresar">Entrar</button>
+<head>
 
-                        <div class="pie-form">
-                            <a href="#">¿Perdiste tu contraseña?</a>
-                            <a href="#">¿No tienes Cuenta? Regístrate</a>
-                          </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Onsen Art</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
 
-                        <p style="text-align:center; color:#a7a6a6;">O iniciar sesión con</p>
+</head>
+
+<body>
+    <div id="fondito">
+
+    </div>
+
+    <div id="contenedor2">
+        <div id="formu2">
+            <form id="loginform">
+                <h1>Login</h1>
+                <input type="name" class="usuario" placeholder="Usuario">
+                <input type="password" class="psswd" placeholder="Contraseña">
+                <button type="submit" class="enter">Entrar</button>
 
 
-                        <div class="social">
-                            <a href="#"><img src="img/google.png" alt="google"></a>
-                            <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-  
-                        </div>
- 
-                    </form>
+                <div class="pie-form">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                    <a href="#">¿No tienes Cuenta? Regístrate</a>
+                </div>
 
-            </div>
+                <p style="text-align:center; color:#a7a6a6;">O iniciar sesión con</p>
+                <div class="social">
+                    <a href="#"><img src="img/google.png" alt="google"></a>
+                    <a href="#"><img src="img/facebook.png" alt="facebook"></a>
+                </div>
+
+            </form>
+
         </div>
+    </div>
 
-        <script src="js/js.js"></script>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>
