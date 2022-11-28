@@ -427,7 +427,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-textarea {
+.areatexto {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
@@ -435,7 +435,7 @@ textarea {
   
 /* Estilo de los inputs y textarea */
 
-input, textarea {
+.entrada, .areatexto {
   font-family: 'Nunito', sans-serif;
   font-size: 110%;
   color: #1b262c;
@@ -458,11 +458,11 @@ input, textarea {
   background-color: #f5f5f5;
 }
   
-input:hover {
+.entrada:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-textarea:hover {
+.areatexto:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -496,14 +496,6 @@ textarea:hover {
   z-index:0;
 
 }
-
-/*.warnings{
-  width: 200px;
-  text-align: center;
-  margin:auto;
-  color:#fb6363;
-  padding-top: 20px;
-}*/
 
 .formulario__grupo-input {
 	position: relative;
@@ -898,4 +890,82 @@ textarea:hover {
   font-weight: bolder;
   display: inline;
   color: #ff6b73;
+}
+
+/* ADMINISTRACION  */
+
+#data_table {
+  margin: auto;
+  background-color: white;
+  border-collapse: collapse !important;
+  border-radius: 20px;
+  border-style: hidden; 
+
+
+}
+
+#data_table th, td {
+  border: 2px solid rgb(162, 167, 194);
+}
+
+#data_table td, th {
+  padding: 20px;
+}
+
+#data_table th {
+  background-color: rgb(224, 228, 247);
+
+}
+
+th:first-of-type {
+  border-top-left-radius: 20px;
+}
+th:last-of-type {
+  border-top-right-radius: 20px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 20px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 20px;
+}
+
+#wrapper{
+  margin: 5rem 5rem;
+}
+
+.edit, .save, .add {
+  font-size: 90%;
+  color:#3c4245;
+  border: none;
+  margin-top: 10px;
+  background-color:#63e481;
+  
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.edit:hover, .save:hover, .add:hover {
+  color: #f2f5f7;
+  background-color: #1b262c;
+  cursor: pointer;
+}
+
+.delete {
+  font-size: 90%;
+  color:#f2f5f7;
+  border: none;
+  margin-top: 10px;
+  background-color:#ff6b73;
+
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+.delete:hover{
+  color: #f2f5f7;
+  background-color: #5f2629;
+  cursor: pointer;
 }

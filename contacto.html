@@ -1,134 +1,131 @@
 <!DOCTYPE html>
 <html lang="en-ES">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Onsen Art</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/css.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Onsen Art</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/css.css">
 
-  </head>
-  <body>
+</head>
 
-    <nav>
-      <div class="logo">
-          <a href="index.html">
-              <img src="img/logo.png" alt="Logo de Onsen Art">
-          </a>
-      </div>
-      <div class="hamburger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-      </div>
-      <ul class="nav-links">
-        <li class="centro"><a href="index.html">Inicio</a></li>
-        <li class="centro"><a href="categorias.html">Categorías</a></li>
-        <li class="centro"><a href="sobreNosotros.html">Sobre nosotros</a></li>
-        <li class="centro"><a href="contacto.html">Contacto</a></li>
-        <li class="derecha"><a href="login.html"><img src="img/user.png" alt="Icono de Login" onmouseover="this.src='img/user_hover.png';" onmouseout="this.src='img/user.png';"></a></li>
-        <li class="derecha"><a href="#"><img src="img/cart.png" alt="Icono de carrito de compra" onmouseover="this.src='img/cart_hover.png';" onmouseout="this.src='img/cart.png';"></a></li>
-      </ul>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo de Onsen Art">
+      </a>
+    </div>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+      <li class="centro"><a href="index.html">Inicio</a></li>
+      <li class="centro"><a href="categorias.html">Categorías</a></li>
+      <li class="centro"><a href="sobreNosotros.html">Sobre nosotros</a></li>
+      <li class="centro"><a href="contacto.html">Contacto</a></li>
+      <li class="derecha"><a href="login.html"><img src="img/user.png" alt="Icono de Login"
+            onmouseover="this.src='img/user_hover.png';" onmouseout="this.src='img/user.png';"></a></li>
+      <li class="derecha"><a href="#"><img src="img/cart.png" alt="Icono de carrito de compra"
+            onmouseover="this.src='img/cart_hover.png';" onmouseout="this.src='img/cart.png';"></a></li>
+    </ul>
   </nav>
-    
-    <div id="contenedor">
-      <div id="contenedorcentrado">
 
-    <form action="" method="POST" id="formu" class="formu">
-      <h1>Contacto</h1>
-      <!--nombre-->
-      <div class="formulario__grupo" id="grupo__nombre">
-        <div class="formulario__grupo-input">
-          <input type="text" id="Nomnre" class="formulario__input" name="nombre" placeholder="Nombre" >
+  <div id="contenedor">
+    <div id="contenedorcentrado">
+
+      <form action="" method="POST" id="formu" class="formu">
+        <h1>Contacto</h1>
+        <!--nombre-->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <div class="formulario__grupo-input">
+            <input type="text" id="Nomnre" class="formulario__input entrada" name="nombre" placeholder="Nombre">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros,
+            letras y guion bajo.</p>
         </div>
-         <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+
+        <!--correo-->
+        <div class="formulario__grupo" id="grupo__correo">
+          <div class="formulario__grupo-input">
+            <input type="text" id="correo" class="formulario__input entrada" name="correo" placeholder="Correo">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
+            bajo.</p>
+        </div>
+        <!--tef-->
+        <div class="formulario__grupo" id="grupo__tef">
+          <div class="formulario__grupo-input">
+            <input type="text" id="tef" class="formulario__input entrada" name="tef" placeholder="Teléfono">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+        </div>
+
+        <textarea class="formulario__input areatexto" name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene correctamente. </p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+      </form>
     </div>
-
-    <!--correo-->
-    <div class="formulario__grupo" id="grupo__correo">
-      <div class="formulario__grupo-input">
-        <input type="text" id="correo" class="formulario__input" name="correo" placeholder="Correo" >
-          <i class="formulario__validacion-estado fas fa-times-circle"></i>
-      </div>
-        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-    </div>
-      <!--tef-->
-    <div class="formulario__grupo" id="grupo__tef">
-      <div class="formulario__grupo-input">
-        <input type="text" id="tef" class="formulario__input" name="tef" placeholder="Teléfono" >
-          <i class="formulario__validacion-estado fas fa-times-circle"></i>
-    </div>
-        <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-    </div>
-
-     <textarea class="formulario__input"
-        name="mensaje" id="mensaje"
-        placeholder="Escriba aquí su mensaje" >
-      </textarea>
-
-    
-      <!--<button type="submit" title="Enviar" name="Ingresar">Enviar</button>-->
-
-      <!--<p id="warnings" class="warnings"></p>-->
-
-
-
-			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene correctamente. </p>
-			</div>
-
-			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-			</div>
-
-
-    </form>
-  </div>
     <div id="derecho">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.542161109128!2d-4.479125440120706!3d36.73131341809572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f73ac97f7e67%3A0x2736f53b0d6658e0!2sAtabal%20fotografia%20e%20imprenta!5e0!3m2!1ses!2ses!4v1666806917638!5m2!1ses!2ses" width="1555" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.542161109128!2d-4.479125440120706!3d36.73131341809572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f73ac97f7e67%3A0x2736f53b0d6658e0!2sAtabal%20fotografia%20e%20imprenta!5e0!3m2!1ses!2ses!4v1666806917638!5m2!1ses!2ses"
+        width="1555" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    
-    
   </div>
-  
+
   <footer>
     <div class="contenedor-columnas">
-        <div class="columna-footer-1">
-            <h3>Onsen Art</h3>
-            <ul>
-                <li><a href="tel:+34952101010">952 10 10 10</a></li>
-                <li><a href="tel:+34666666666">666 66 66 66</a></li>
-                <li><a href="mailto:info@onsenart.com">info@onsenart.com</a></li>
-                <li>Plaza la Milagrosa, Málaga</li>
-            </ul>
-        </div>
-        <div class="columna-footer-2">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="#">Aviso Legal</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Política de Cookies</a></li>
-                <li><a href="#">Transparencia</a></li>
-            </ul>
-        </div>
+      <div class="columna-footer-1">
+        <h3>Onsen Art</h3>
+        <ul>
+          <li><a href="tel:+34952101010">952 10 10 10</a></li>
+          <li><a href="tel:+34666666666">666 66 66 66</a></li>
+          <li><a href="mailto:info@onsenart.com">info@onsenart.com</a></li>
+          <li>Plaza la Milagrosa, Málaga</li>
+        </ul>
+      </div>
+      <div class="columna-footer-2">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+          <li><a href="#">Transparencia</a></li>
+        </ul>
+      </div>
     </div>
-    
-    <div class="copyright-footer">
-        <h3>&copy; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script> - Onsen Art</h3>
-    </div>
-</footer>
 
-  
-    <script src="js/main.js"></script>
-    <script src="js/contacto.js"></script>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-  </body>
+    <div class="copyright-footer">
+      <h3>&copy; 2022
+        <script>new Date().getFullYear() > 2022 && document.write("-" + new Date().getFullYear());</script> - Onsen Art
+      </h3>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

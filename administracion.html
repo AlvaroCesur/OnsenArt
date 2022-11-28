@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/css.css">
 
 </head>
 
 <body>
-
     <nav>
         <div class="logo">
             <a href="index.html">
@@ -33,98 +33,115 @@
             <li class="centro"><a href="categorias.html">Categorías</a></li>
             <li class="centro"><a href="sobreNosotros.html">Sobre nosotros</a></li>
             <li class="centro"><a href="contacto.html">Contacto</a></li>
-            <li class="derecha"><a href="login.html"><img src="img/user.png" alt="Icono de Login" onmouseover="this.src='img/user_hover.png';" onmouseout="this.src='img/user.png';"></a></li>
-            <li class="derecha"><a href="#"><img src="img/cart.png" alt="Icono de carrito de compra" onmouseover="this.src='img/cart_hover.png';" onmouseout="this.src='img/cart.png';"></a></li>
+            <li class="derecha"><a href="login.html"><img src="img/user.png" alt="Icono de Login"
+                        onmouseover="this.src='img/user_hover.png';" onmouseout="this.src='img/user.png';"></a></li>
+            <li class="derecha"><a href="#"><img src="img/cart.png" alt="Icono de carrito de compra"
+                        onmouseover="this.src='img/cart_hover.png';" onmouseout="this.src='img/cart.png';"></a></li>
         </ul>
     </nav>
 
     <div id="wrapper">
-        <table cellspacing=2 cellpadding=5 id="data_table">
+        <table id="data_table">
             <tr>
+                <th>ID</th>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Descripción</th>
                 <th>Stock</th>
+                <th></th>
             </tr>
 
             <tr id="row1">
-                <td id="nombreProducto1">Juliana</td>
-                <td id="precio1">Téllez Pérez</td>
-                <td id="descripcion1">12345678</td>
-                <td id="stock1">juliana@cesur.com</td>
+                <td id="id1">00</td>
+                <td id="nombre1">Ilustración de alta calidad</td>
+                <td id="precio1">20€</td>
+                <td id="descripcion1">Ilustración tamaño grande</td>
+                <td id="stock1">48</td>
                 <td>
                     <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
-                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')" hidden>
                     <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
                 </td>
             </tr>
-
             <tr id="row2">
-                <td id="nombreProducto2">Javier</td>
-                <td id="precio2">Santos Gutierrez</td>
-                <td id="descripcion2">87654321</td>
-                <td id="stock2">javier@cesur.com</td>
+                <td id="id2">01</td>
+                <td id="nombre2">Pegatinas de alta calidad</td>
+                <td id="precio2">10€</td>
+                <td id="descripcion2">Set de pegatinas</td>
+                <td id="stock2">51</td>
                 <td>
                     <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
-                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')" hidden>
                     <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
                 </td>
             </tr>
-
             <tr id="row3">
-                <td id="nombreProducto3">Teresa</td>
-                <td id="precio3">García Aranguren</td>
-                <td id="descripcion3">qwertyui</td>
-                <td id="stock3">teresa@cesur.com</td>
+                <td id="id3">02</td>
+                <td id="nombre3">Llavero de alta calidad</td>
+                <td id="precio3">25€</td>
+                <td id="descripcion3">José Nishikori</td>
+                <td id="stock3">36</td>
                 <td>
                     <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
-                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')" hidden>
                     <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
                 </td>
             </tr>
-
+            <tr id="row4">
+                <td id="id4">03</td>
+                <td id="nombre4">Ilustración de alta calidad 2</td>
+                <td id="precio4">20€</td>
+                <td id="descripcion4">Tamaño mediano</td>
+                <td id="stock4">0</td>
+                <td>
+                    <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                    <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')" hidden>
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+                </td>
+            </tr>
             <tr>
-                <td><input type="text" id="new_nombreProducto"></td>
-                <td><input type="text" id="new_precio"></td>
-                <td><input type="text" id="new_descripcion"></td>
-                <td><input type="text" id="new_stock"></td>
+                <td><input type="text" id="nuevo_id"></td>
+                <td><input type="text" id="nuevo_nombre"></td>
+                <td><input type="text" id="nuevo_precio"></td>
+                <td><input type="text" id="nuevo_descripcion"></td>
+                <td><input type="text" id="nuevo_stock"></td>
                 <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
             </tr>
-
         </table>
+
     </div>
 
-
-<footer>
-    <div class="contenedor-columnas">
-        <div class="columna-footer-1">
-            <h3>Onsen Art</h3>
-            <ul>
-                <li><a href="tel:+34952101010">952 10 10 10</a></li>
-                <li><a href="tel:+34666666666">666 66 66 66</a></li>
-                <li><a href="mailto:info@onsenart.com">info@onsenart.com</a></li>
-                <li>Plaza la Milagrosa, Málaga</li>
-            </ul>
+    <footer>
+        <div class="contenedor-columnas">
+            <div class="columna-footer-1">
+                <h3>Onsen Art</h3>
+                <ul>
+                    <li><a href="tel:+34952101010">952 10 10 10</a></li>
+                    <li><a href="tel:+34666666666">666 66 66 66</a></li>
+                    <li><a href="mailto:info@onsenart.com">info@onsenart.com</a></li>
+                    <li>Plaza la Milagrosa, Málaga</li>
+                </ul>
+            </div>
+            <div class="columna-footer-2">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Aviso Legal</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Transparencia</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="columna-footer-2">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="#">Aviso Legal</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Política de Cookies</a></li>
-                <li><a href="#">Transparencia</a></li>
-            </ul>
+
+        <div class="copyright-footer">
+            <h3>&copy; 2022
+                <script>new Date().getFullYear() > 2022 && document.write("-" + new Date().getFullYear());</script> - Onsen
+                Art
+            </h3>
         </div>
-    </div>
+    </footer>
 
-    <div class="copyright-footer">
-        <h3>&copy; 2022
-            <script>new Date().getFullYear() > 2022 && document.write("-" + new Date().getFullYear());</script> - Onsen Art
-        </h3>
-    </div>
-</footer>
-
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
