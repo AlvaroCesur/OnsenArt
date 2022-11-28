@@ -40,15 +40,15 @@
     </ul>
   </nav>
 
-  <div id="contenedor">
-    <div id="contenedorcentrado">
+  <div id="contenedorContacto">
+
 
       <form action="" method="POST" id="formu" class="formu">
         <h1>Contacto</h1>
         <!--nombre-->
         <div class="formulario__grupo" id="grupo__nombre">
           <div class="formulario__grupo-input">
-            <input type="text" id="Nomnre" class="formulario__input entrada" name="nombre" placeholder="Nombre">
+            <input type="text" id="Nomnre" class="formulario__input" name="nombre" placeholder="Nombre">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros,
@@ -58,7 +58,7 @@
         <!--correo-->
         <div class="formulario__grupo" id="grupo__correo">
           <div class="formulario__grupo-input">
-            <input type="text" id="correo" class="formulario__input entrada" name="correo" placeholder="Correo">
+            <input type="text" id="correo" class="formulario__input" name="correo" placeholder="Correo">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
@@ -67,31 +67,39 @@
         <!--tef-->
         <div class="formulario__grupo" id="grupo__tef">
           <div class="formulario__grupo-input">
-            <input type="text" id="tef" class="formulario__input entrada" name="tef" placeholder="Teléfono">
+            <input type="text" id="tef" class="formulario__input" name="tef" placeholder="Teléfono">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
           <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
         </div>
 
-        <textarea class="formulario__input areatexto" name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+        <textarea class="formulario__input" name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje">
+      </textarea>
+
+
+        <!--<button type="submit" title="Enviar" name="Ingresar">Enviar</button>-->
+
+        <!--<p id="warnings" class="warnings"></p>-->
+
+
 
         <div class="formulario__mensaje" id="formulario__mensaje">
-          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellene correctamente. </p>
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellénelo correctamente. </p>
         </div>
 
         <div class="formulario__grupo formulario__grupo-btn-enviar">
           <button type="submit" class="formulario__btn">Enviar</button>
-          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado. ¡Nos pondremos pronto en contacto con usted! :)</p>
         </div>
+
+
       </form>
-    </div>
-    <div id="derecho">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12790.542161109128!2d-4.479125440120706!3d36.73131341809572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f73ac97f7e67%3A0x2736f53b0d6658e0!2sAtabal%20fotografia%20e%20imprenta!5e0!3m2!1ses!2ses!4v1666806917638!5m2!1ses!2ses"
-        width="1555" height="750" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+
+      <div id="background-map"></div>
+
   </div>
+
+  
 
   <footer>
     <div class="contenedor-columnas">
@@ -122,7 +130,9 @@
     </div>
   </footer>
 
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvLa7zEOfAEITDzScMdqmn9GodsacqZPk&callback=initMap"
+    async defer>
+    </script>
   <script src="js/main.js"></script>
   <script src="js/contacto.js"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
