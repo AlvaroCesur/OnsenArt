@@ -48,40 +48,30 @@
         <!--nombre-->
         <div class="formulario__grupo" id="grupo__nombre">
           <div class="formulario__grupo-input">
-            <input type="text" id="Nomnre" class="formulario__input" name="nombre" placeholder="Nombre">
+            <input type="text" id="Nomnre" class="formulario__input entrada" name="nombre" placeholder="Nombre">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros,
-            letras y guion bajo.</p>
+          <p class="formulario__input-error">Tiene que contener de 4 a 16 dígitos.</p>
         </div>
 
         <!--correo-->
         <div class="formulario__grupo" id="grupo__correo">
           <div class="formulario__grupo-input">
-            <input type="text" id="correo" class="formulario__input" name="correo" placeholder="Correo">
+            <input type="text" id="correo" class="formulario__input entrada" name="correo" placeholder="Correo">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
-            bajo.</p>
+          <p class="formulario__input-error">No puede contener caracteres especiales.</p>
         </div>
         <!--tef-->
         <div class="formulario__grupo" id="grupo__tef">
           <div class="formulario__grupo-input">
-            <input type="text" id="tef" class="formulario__input" name="tef" placeholder="Teléfono">
+            <input type="text" id="tef" class="formulario__input entrada" name="tef" placeholder="Teléfono">
             <i class="formulario__validacion-estado fas fa-times-circle"></i>
           </div>
-          <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+          <p class="formulario__input-error">El telefono solo puede contener numeros.</p>
         </div>
 
-        <textarea class="formulario__input" name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje">
-      </textarea>
-
-
-        <!--<button type="submit" title="Enviar" name="Ingresar">Enviar</button>-->
-
-        <!--<p id="warnings" class="warnings"></p>-->
-
-
+        <textarea class="formulario__input areatexto" name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
 
         <div class="formulario__mensaje" id="formulario__mensaje">
           <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellénelo correctamente. </p>

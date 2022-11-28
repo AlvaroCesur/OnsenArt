@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-ES">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Onsen Art</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/css.css">
+
+</head>
+
+<body>
+
+  <nav>
+      <div class="logo">
+          <a href="index.html">
+              <img src="../img/logo.png" alt="Logo de Onsen Art">
+          </a>
+      </div>
+      <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+          <li class="centro"><a href="index.html">Inicio</a></li>
+          <li class="centro"><a href="categorias.html">Categorías</a></li>
+          <li class="centro"><a href="sobreNosotros.html">Sobre nosotros</a></li>
+          <li class="centro"><a href="contacto.html">Contacto</a></li>
+          <li class="centro"><a href="../administracion.html">Administración</a></li>
+          <li class="centro"><input type="button" value="Salir" class="delete" onclick="location.href='../index.html'"></li>
+      </ul>
+  </nav>
+
+  <div id="contenedorContacto">
+
+
+    <form action="" method="POST" id="formu" class="formu">
+      <h1>Contacto</h1>
+      <!--nombre-->
+      <div class="formulario__grupo" id="grupo__nombre">
+        <div class="formulario__grupo-input">
+          <input type="text" id="Nomnre" class="formulario__input entrada" name="nombre" placeholder="Nombre">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">Tiene que contener de 4 a 16 dígitos.</p>
+      </div>
+
+      <!--correo-->
+      <div class="formulario__grupo" id="grupo__correo">
+        <div class="formulario__grupo-input">
+          <input type="text" id="correo" class="formulario__input entrada" name="correo" placeholder="Correo">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">No puede contener caracteres especiales.</p>
+      </div>
+      <!--tef-->
+      <div class="formulario__grupo" id="grupo__tef">
+        <div class="formulario__grupo-input">
+          <input type="text" id="tef" class="formulario__input entrada" name="tef" placeholder="Teléfono">
+          <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+        <p class="formulario__input-error">El telefono solo puede contener numeros.</p>
+      </div>
+
+      <textarea class="formulario__input areatexto" name="mensaje" id="mensaje"
+        placeholder="Escriba aquí su mensaje"></textarea>
+
+      <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellénelo correctamente. </p>
+      </div>
+
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+        <button type="submit" class="formulario__btn">Enviar</button>
+        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado. ¡Nos pondremos pronto en
+          contacto con usted! :)</p>
+      </div>
+
+
+    </form>
+
+    <div id="background-map"></div>
+
+  </div>
+
+
+
+  <footer>
+    <div class="contenedor-columnas">
+      <div class="columna-footer-1">
+        <h3>Onsen Art</h3>
+        <ul>
+          <li><a href="tel:+34952101010">952 10 10 10</a></li>
+          <li><a href="tel:+34666666666">666 66 66 66</a></li>
+          <li><a href="mailto:info@onsenart.com">info@onsenart.com</a></li>
+          <li>Plaza la Milagrosa, Málaga</li>
+        </ul>
+      </div>
+      <div class="columna-footer-2">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+          <li><a href="#">Transparencia</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright-footer">
+      <h3>&copy; 2022
+        <script>new Date().getFullYear() > 2022 && document.write("-" + new Date().getFullYear());</script> - Onsen Art
+      </h3>
+    </div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvLa7zEOfAEITDzScMdqmn9GodsacqZPk&callback=initMap"
+    async defer>
+    </script>
+  <script src="../js/main.js"></script>
+  <script src="../js/contacto.js"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
