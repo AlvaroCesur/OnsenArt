@@ -811,7 +811,9 @@ textarea:hover {
 }
 
 .btnContacto {
-  margin: 5vh 5vw ;
+  margin: 0 auto;
+  margin-top: 5vh;
+  display: block;
   width: 50%;
   text-align: center;
 
