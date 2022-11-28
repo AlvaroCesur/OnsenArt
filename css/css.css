@@ -872,12 +872,30 @@ textarea:hover {
   margin-left: 5%;
   margin-right: 5%;
 }
+
 #wrapperCat .covers div {
   margin: 2%;
 }
+
 #wrapperCat .covers img {
   border: 1px solid #f2f5f7;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+}
+
+.producto {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.precioProducto {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  display: inline;
+  color: #ff6b73;
 }

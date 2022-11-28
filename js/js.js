@@ -13,6 +13,7 @@ hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle("toggle");
 });
 
+// Ordenar los productos por categoría (imprescindible que sea en JQuery)
 $(function() {
 
     $('.toggles button').click(function(){
@@ -30,6 +31,7 @@ $(function() {
 
 
 }); 
+
 
 function edit_row(no)
 {
