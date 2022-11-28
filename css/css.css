@@ -507,15 +507,6 @@ textarea:hover {
 }
 
 /* LOGIN */
-#fondito{
-
-  width: 350px;
-  height: 350px;
-  background-image: url(../img/favicon.png);
-  background-size:10% auto;
-  opacity: 0.2;
-
-}
 
 #formu2 {
   width: 100%;
