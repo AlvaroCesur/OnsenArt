@@ -12,6 +12,7 @@ h1 {
 
 body {
   overflow-x: hidden;
+  margin: 0;
   background-color: #fffad9;
 }
 
@@ -358,40 +359,23 @@ footer a:hover {
 
 
 /* CONTACTO */
-  body {
-    font-family: 'Nunito', sans-serif;  
-    font-weight: normal;
-    font-size: 100%;
-    color: #1b262c;
-    margin: 0;
-    
-  }
   
-  #contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin: 0;
-    padding: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    
-    background-color:#fffad9;
-  }
+#contenedorContacto {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  background-color:#fffad9;
+}
 
-  #contenedorcentrado {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-direction:row;
-
-    margin-left: 250px;
-    padding: 10px;
-    box-sizing: border-box;
+/* Mapa */
+#background-map {
+  height: 100vh;
+  width: 100vw;
+  position: absolute; 
 }
 
 #formu {
@@ -400,6 +384,7 @@ footer a:hover {
   width: 100%;
   max-width: 355px;
   min-width: 355px;
+  margin-right: 10rem;
   padding: 30px 30px 80px 30px;
   background-color: #ffffff;
   
@@ -467,33 +452,15 @@ textarea:hover {
 }
 
 /* Responsive de contacto */
-@media all and (max-width: 775px) {
-  
-  #contenedorcentrado {
-      flex-direction:column;
+@media all and (max-width: 1130px) {
 
-      min-width: 380px;
-      max-width: 900px;
-      width: 90%;
-
-      padding: 30px;
-      box-sizing: border-box;
-
-      margin-top: 30px;
+  #contenedorContacto {
+    justify-content: space-evenly;
   }
 
-  #derecho {
-    margin-top: 50px;
-    margin-right: 45px;
-
+  #formu {
+    margin-right: 0;
   }
-
-}
-
-/* Mapa */
-#derecho {
-  position:absolute;
-  z-index:0;
 
 }
 
