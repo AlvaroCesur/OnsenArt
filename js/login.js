@@ -1,19 +1,15 @@
-var x = document.querySelector(".correo");
-console.log(x);
+var x = document.querySelector(".usuario");
 var y = document.querySelector(".psswd");
-console.log(y);
 
 
-function iniciosesion() {
-    if (x.value == "javier@alumnos.com" && y.value == "javier123") {
-        window.location.href = "alumnos-javier.html";
-    } else if (x.value == "fran@alumnos.com" && y.value == "fran456") {
-        window.location.href = "alumnos-fran.html";
-    } else if (x.value == "francisco@profesores.com" && y.value == "francisco") {
-        window.location.href = "profesores-francisco.html";
-    } else if (x.value == "joseantonio@profesores.com" && y.value == "joseantonio") {
-        window.location.href = "profesores-joseantonio.html";
-    } 
+function sesion() {
+    if (x.value == "admin" && y.value == "admin") {
+        window.location.href = "administracion.html";
+        alert("Si");
+    }else{
+        window.location.href = "index.html";
+    }
 }
 
-var z = document.querySelector(".enter").addEventListener("click", iniciosesion);
+
+
