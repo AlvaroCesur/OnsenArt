@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll('#formu input');
 
 const expresiones = {
 	
-	nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos.
+	nombre: /^[a-zA-ZÀ-ÿ\s]{4,16}$/, // Letras y espacios, pueden llevar acentos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	tef: /^\d{7,14}$/ // 7 a 14 numeros.
 }
