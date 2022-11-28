@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
@@ -11,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/css.css">
-    
+
 </head>
+
 <body>
 
     <nav>
@@ -31,30 +33,40 @@
             <li class="centro"><a href="producto.html">Productos</a></li>
             <li class="centro"><a href="sobreNosotros.html">Sobre nosotros</a></li>
             <li class="centro"><a href="contacto.html">Contacto</a></li>
-            <li class="derecha"><a href="login.html"><img src="img/user.png" alt="Icono de Login" onmouseover="this.src='img/user_hover.png';" onmouseout="this.src='img/user.png';"></a></li>
-            <li class="derecha"><a href="#"><img src="img/cart.png" alt="Icono de carrito de compra" onmouseover="this.src='img/cart_hover.png';" onmouseout="this.src='img/cart.png';"></a></li>
+            <li class="derecha"><a href="login.html"><img src="img/user.png" alt="Icono de Login"
+                        onmouseover="this.src='img/user_hover.png';" onmouseout="this.src='img/user.png';"></a></li>
+            <li class="derecha"><a href="#"><img src="img/cart.png" alt="Icono de carrito de compra"
+                        onmouseover="this.src='img/cart_hover.png';" onmouseout="this.src='img/cart.png';"></a></li>
         </ul>
     </nav>
 
-    <section class="contenedorAboutUs">
+    <main id="contenedorPrincipal">
+        <section class="contenedorAboutUs">
 
-        <article class="breveDescripcion">
-            <h1>¡Conoce a Onsen Art!</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tenetur quod, natus modi minima esse dignissimos culpa aspernatur doloremque tempore, sint quas repellat et in ad laborum ipsum voluptatem molestias?</h3>
-        </article>
+            <article class="breveDescripcion">
+                <h1>¡Conoce a Onsen Art!</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tenetur quod, natus modi minima
+                    esse dignissimos culpa aspernatur doloremque tempore, sint quas repellat et in ad laborum ipsum
+                    voluptatem molestias?</h3>
+            </article>
 
-        <aside class="imagenAboutUs">
-            <img src="img/logo.png" alt="">
-        </aside>
+            <aside class="imagenAboutUs">
+                <img src="img/logo.png" alt="">
+            </aside>
 
-        <article class="seccionAboutUs">
-            <h1>¿A qué nos dedicamos?</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam beatae fugit, dolorum illo porro voluptatum fuga magnam enim ab, eius a odio culpa praesentium eos, doloribus quibusdam voluptatem sapiente? Alias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, doloremque aliquam ullam quam reiciendis soluta impedit omnis. Non optio nobis adipisci labore voluptas, vero quos voluptate, doloremque numquam officiis cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aspernatur dolorem, culpa neque consequatur esse, quisquam dolore a fugiat ex impedit voluptates numquam ad ipsum sunt inventore! Inventore, fugiat est.</p>
-        </article>
-
-        <button class="btnContacto">¡Contáctanos!</button>
-
-    </section>
+            <article class="seccionAboutUs">
+                <h1>¿A qué nos dedicamos?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam beatae fugit, dolorum illo porro
+                    voluptatum fuga magnam enim ab, eius a odio culpa praesentium eos, doloribus quibusdam voluptatem
+                    sapiente? Alias. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, doloremque
+                    aliquam ullam quam reiciendis soluta impedit omnis. Non optio nobis adipisci labore voluptas, vero
+                    quos voluptate, doloremque numquam officiis cumque. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Reiciendis aspernatur dolorem, culpa neque consequatur esse, quisquam dolore a
+                    fugiat ex impedit voluptates numquam ad ipsum sunt inventore! Inventore, fugiat est.</p>
+            </article>
+        </section>
+        <button class="btnContacto" href="contacto.html">¡Contáctanos!</button>
+    </main>
 
     <footer>
         <div class="contenedor-columnas">
@@ -77,12 +89,16 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="copyright-footer">
-            <h3>&copy; 2022<script>new Date().getFullYear()>2022&&document.write("-"+new Date().getFullYear());</script> - Onsen Art</h3>
+            <h3>&copy; 2022
+                <script>new Date().getFullYear() > 2022 && document.write("-" + new Date().getFullYear());</script> - Onsen
+                Art
+            </h3>
         </div>
     </footer>
 
     <script src="js/js.js"></script>
 </body>
+
 </html>

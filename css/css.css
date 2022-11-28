@@ -721,7 +721,11 @@ textarea:hover {
 }
 
 /* SOBRE NOSOTROS */
-
+#contenedorPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .contenedorAboutUs {
   margin: auto;
   width: 75%;
@@ -740,8 +744,10 @@ textarea:hover {
 }
 
 .btnContacto {
+  margin: 5vh 5vw ;
   width: 50%;
   text-align: center;
+
 }
 
 @media screen and (max-width: 1250px) {
